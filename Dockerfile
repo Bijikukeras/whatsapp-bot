@@ -1,5 +1,8 @@
-FROM quay.io/lyfe00011/bot:beta
-RUN git clone https://github.com/lyfe00011/whatsapp-bot.git /root/LyFE/
-RUN mv /root/bottus/* /root/LyFE/
-WORKDIR /root/LyFE/
-CMD ["node", "bot.js"]
+FROM node:16
+WORKDIR /app
+# Clone project dari GitHub
+RUN git clone https://github.com/lyfe00011/whatsapp-bot.git /app
+# Install dependencies
+RUN npm install
+# Menjalankan bot
+CMD ["node", "./whatsAsena/bot.js"]
