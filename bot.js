@@ -7,7 +7,7 @@ WhatsAsena - Yusuf Usta
 */
 const fs = require("fs")
 const path = require("path")
-const { handleMessages } = require("./Utilis/msg")
+//const { handleMessages } = require("./Utilis/msg")
 const chalk = require("chalk")
 const { DataTypes } = require("sequelize")
 const config = require("./config")
