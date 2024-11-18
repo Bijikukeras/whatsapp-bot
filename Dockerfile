@@ -5,4 +5,4 @@ RUN git clone https://github.com/lyfe00011/whatsapp-bot.git /app
 # Install dependencies
 RUN npm install
 # Menjalankan bot
-CMD ["node", "./whatsAsena/bot.js"]
+CMD ["node", "bot.js"]
